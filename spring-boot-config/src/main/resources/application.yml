@@ -1,0 +1,6 @@
+### 主配置文件
+
+spring:
+  # 配置不同开发环境的配置文件
+  profiles:
+    active: prod

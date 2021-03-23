@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    <bean id="father" class="top.flobby.boot.study.entity.Father">-->
+<!--        <property name="name" value="father"/>-->
+<!--        <property name="age" value="35"/>-->
+<!--    </bean>-->
+<!--    属性创建-->
+<!--    <bean id="student" class="top.flobby.boot.study.entity.Student">-->
+<!--        <property name="name" value="aaa"/>-->
+<!--        <property name="age" value="20"/>-->
+<!--        <property name="father" ref="father"/>-->
+<!--    </bean>-->
+<!--    构造方法创建，注意全参构造方法顺序-->
+<!--    <bean id="student1" class="top.flobby.boot.study.entity.Student">-->
+<!--        <constructor-arg name="name" value="bbb"/>-->
+<!--        <constructor-arg name="age" value="22"/>-->
+<!--    </bean>-->
+</beans>

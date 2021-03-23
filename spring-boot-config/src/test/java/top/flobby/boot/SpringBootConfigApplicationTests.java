@@ -1,4 +1,4 @@
-package top.flobby.boot.config;
+package top.flobby.boot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
