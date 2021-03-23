@@ -35,8 +35,6 @@
                   <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
                   <option name="javaModelPacakge" value="top.flobby.boot.mybatis.entity" />
                   <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
-                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
-                  <option name="javaServicePath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
                   <option name="xmlPackage" value="mapper" />
                   <option name="xmlPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/resources" />
                 </UserPackageAndPathInfoByModule>
@@ -44,6 +42,7 @@
             </entry>
           </map>
         </option>
+        <option name="p3CComment" value="true" />
         <option name="removeTablePreName" value="t" />
         <option name="tableGenerateConfigs">
           <map>
@@ -67,6 +66,26 @@
                 </TableGenerateConfig>
               </value>
             </entry>
+            <entry key="db_spring:t_course">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="course_id" />
+                  <option name="javaModelName" value="Course" />
+                  <option name="moduleName" value="spring-boot-mybatis" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_spring:t_course_student">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="CourseStudent" />
+                  <option name="moduleName" value="spring-boot-mybatis" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="db_spring:t_teacher">
               <value>
                 <TableGenerateConfig>
@@ -79,6 +98,7 @@
             </entry>
           </map>
         </option>
+        <option name="useSwagger" value="true" />
         <option name="xmlMapperPackage" value="mapper" />
         <option name="xmlMapperPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/resources" />
       </ProjectProfile>

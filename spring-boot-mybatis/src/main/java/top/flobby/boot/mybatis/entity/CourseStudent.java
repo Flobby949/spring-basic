@@ -10,27 +10,27 @@ import lombok.NoArgsConstructor;
 /**
  * @author Flobby
  */
-@ApiModel(value="top-flobby-boot-mybatis-entity-Clazz")
+@ApiModel(value="top-flobby-boot-mybatis-entity-CourseStudent")
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Clazz {
+public class CourseStudent {
     /**
-    * 班级id
+    * 主键
     */
-    @ApiModelProperty(value="班级id")
-    private Integer clazzId;
+    @ApiModelProperty(value="主键")
+    private Integer id;
 
     /**
-    * 班级名称
+    * 课程id
     */
-    @ApiModelProperty(value="班级名称")
-    private String clazzName;
+    @ApiModelProperty(value="课程id")
+    private Integer courseId;
 
     /**
-    * 管理班级教师id
+    * 学生id
     */
-    @ApiModelProperty(value="管理班级教师id")
-    private Integer teacherId;
+    @ApiModelProperty(value="学生id")
+    private Integer studentId;
 }

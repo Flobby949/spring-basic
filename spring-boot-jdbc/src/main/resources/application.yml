@@ -3,5 +3,5 @@
 spring:
   # 配置不同开发环境的配置文件
   profiles:
-#    active: dev    #mysql
-    active: test    #h2
+    active: dev    #mysql
+#    active: test    #h2

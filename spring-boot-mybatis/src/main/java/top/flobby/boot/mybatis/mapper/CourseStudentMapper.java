@@ -1,50 +1,50 @@
 package top.flobby.boot.mybatis.mapper;
 
-import top.flobby.boot.mybatis.entity.Teacher;
+import top.flobby.boot.mybatis.entity.CourseStudent;
 
 /**
  * @author Flobby
  */
-public interface TeacherMapper {
+public interface CourseStudentMapper {
     /**
      * delete by primary key
-     * @param teacherId primaryKey
+     * @param id primaryKey
      * @return deleteCount
      */
-    int deleteByPrimaryKey(Integer teacherId);
+    int deleteByPrimaryKey(Integer id);
 
     /**
      * insert record to table
      * @param record the record
      * @return insert count
      */
-    int insert(Teacher record);
+    int insert(CourseStudent record);
 
     /**
      * insert record to table selective
      * @param record the record
      * @return insert count
      */
-    int insertSelective(Teacher record);
+    int insertSelective(CourseStudent record);
 
     /**
      * select by primary key
-     * @param teacherId primary key
+     * @param id primary key
      * @return object by primary key
      */
-    Teacher selectByPrimaryKey(Integer teacherId);
+    CourseStudent selectByPrimaryKey(Integer id);
 
     /**
      * update record selective
      * @param record the updated record
      * @return update count
      */
-    int updateByPrimaryKeySelective(Teacher record);
+    int updateByPrimaryKeySelective(CourseStudent record);
 
     /**
      * update record
      * @param record the updated record
      * @return update count
      */
-    int updateByPrimaryKey(Teacher record);
+    int updateByPrimaryKey(CourseStudent record);
 }
