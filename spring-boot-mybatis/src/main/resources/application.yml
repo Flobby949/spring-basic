@@ -4,3 +4,10 @@ spring:
     username: root
     password: kobe24
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  #
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: top.flobby.boot.mybatis.entity
+  configuration:
+    map-underscore-to-camel-case: true  # mybatis开启驼峰式命名
