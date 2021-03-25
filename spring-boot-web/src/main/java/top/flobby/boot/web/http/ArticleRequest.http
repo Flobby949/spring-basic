@@ -1,0 +1,58 @@
+POST http://localhost:8080/api/books/form
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="article"
+
+{"id":222,"title"="java","content"="java太难了"}
+--WebAppBoundary--
+
+### json对象修改
+PUT http://localhost:8080/api/books/body
+Content-Type: application/json
+
+{
+  "id": 123,
+  "title": "修改"
+}
+
+### 文件上传
+POST http://localhost:8080/api/books/files
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="files"; filename="file.jpg"
+
+< ./file.jpg
+--WebAppBoundary--
+
+### url传参删除
+DELETE http://localhost:8080/api/books/
+Content-Type: application/x-www-form-urlencoded
+
+id=156
+
+### url传参修改
+PUT http://localhost:8080/api/books/
+Content-Type: application/x-www-form-urlencoded
+
+id=99&title=new-element
+
+### json对象添加
+POST http://localhost:8080/api/books
+Content-Type: application/json
+
+{
+  "id": 222,
+  "author": "jcx",
+  "title": "《spring》",
+  "content": "spring学不下去"
+}
+
+### 路径传参查询
+GET http://localhost:8080/api/books/111
+Accept: application/json
+
+### 查询所有
+GET http://localhost:8080/api/books/all
+Accept: application/json

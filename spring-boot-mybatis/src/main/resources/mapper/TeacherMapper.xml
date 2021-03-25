@@ -69,4 +69,7 @@
       clazz_id = #{clazzId,jdbcType=INTEGER}
     where teacher_id = #{teacherId,jdbcType=INTEGER}
   </update>
+  <select id="selectAll" resultMap="BaseResultMap">
+    SELECT * FROM t_teacher
+  </select>
 </mapper>

@@ -1,50 +1,76 @@
 package top.flobby.boot.mybatis.mapper;
 
+import org.apache.ibatis.annotations.Param;
 import top.flobby.boot.mybatis.entity.Student;
+
+import java.util.List;
 
 /**
  * @author Flobby
  */
 public interface StudentMapper {
     /**
-     * delete by primary key
-     * @param studentId primaryKey
-     * @return deleteCount
+     * 新增学生
+     *
+     * @param student student对象
+     * @return int
+     */
+    int insert(Student student);
+
+    /**
+     * 根据id删除学生
+     *
+     * @param studentId 学生id
+     * @return int
      */
     int deleteByPrimaryKey(Integer studentId);
 
     /**
-     * insert record to table
-     * @param record the record
-     * @return insert count
-     */
-    int insert(Student record);
-
-    /**
-     * insert record to table selective
-     * @param record the record
-     * @return insert count
-     */
-    int insertSelective(Student record);
-
-    /**
-     * select by primary key
-     * @param studentId primary key
-     * @return object by primary key
+     * 根据id查询学生
+     *
+     * @param studentId 学生id
+     * @return 查询到的学生对象
      */
     Student selectByPrimaryKey(Integer studentId);
 
-    /**
-     * update record selective
-     * @param record the updated record
-     * @return update count
-     */
-    int updateByPrimaryKeySelective(Student record);
 
     /**
-     * update record
-     * @param record the updated record
-     * @return update count
+     * 修改学生信息
+     *
+     * @param student student对象
+     * @return int
      */
-    int updateByPrimaryKey(Student record);
+    int updateByPrimaryKeySelective(Student student);
+
+    /**
+     * 批量新增学生
+     *
+     * @param students 学生集合
+     * @return int
+     */
+    int batchInsert(@Param("students") List<Student> students);
+
+    /**
+     * 批量删除
+     *
+     * @param idList 待删记录id集合
+     * @return int
+     */
+    int batchDelete(@Param("idList") List<Integer> idList);
+
+    /**
+     * 批量修改
+     *
+     * @param students 学生集合
+     * @return int
+     */
+    int batchUpdate(@Param("students") List<Student> students);
+
+    /**
+     * 按条件单表查询，结合动态SQL
+     *
+     * @param student 参数对象
+     * @return List<Student>
+     */
+    List<Student> selectByDynamicSql(Student student);
 }

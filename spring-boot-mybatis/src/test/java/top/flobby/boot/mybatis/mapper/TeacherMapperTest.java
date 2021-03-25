@@ -24,18 +24,4 @@ class TeacherMapperTest {
         System.out.println(teacherList);
     }
 
-    @Test
-    void findAll() {
-        List<Teacher> teacherList = teacherMapper.findAll();
-        System.out.println(teacherList);
-    }
-
-    @Test
-    void insertTeacher(){
-        Teacher teacher = Teacher.builder()
-                .teacherName("许老师")
-                .clazzId(1)
-                .build();
-        teacherMapper.insertTeacher(teacher);
-    }
 }

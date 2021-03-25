@@ -2,6 +2,8 @@ package top.flobby.boot.mybatis.mapper;
 
 import top.flobby.boot.mybatis.entity.Teacher;
 
+import java.util.List;
+
 /**
  * @author Flobby
  */
@@ -47,4 +49,10 @@ public interface TeacherMapper {
      * @return update count
      */
     int updateByPrimaryKey(Teacher record);
+
+    /**
+     * 获取教师列表
+     * @return List
+     */
+    List<Teacher> selectAll();
 }
