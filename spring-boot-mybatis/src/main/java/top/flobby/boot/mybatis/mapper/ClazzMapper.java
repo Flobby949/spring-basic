@@ -7,44 +7,18 @@ import top.flobby.boot.mybatis.entity.Clazz;
  */
 public interface ClazzMapper {
     /**
-     * delete by primary key
-     * @param clazzId primaryKey
-     * @return deleteCount
+     * 查询班级所有学生
+     *
+     * @param clazzId 班级id
+     * @return clazz对象
      */
-    int deleteByPrimaryKey(Integer clazzId);
+    Clazz getClazzOneToMany(int clazzId);
 
     /**
-     * insert record to table
-     * @param record the record
-     * @return insert count
+     * 查询班级所有学生和老师
+     *
+     * @param clazzId 班级id
+     * @return clazz对象
      */
-    int insert(Clazz record);
-
-    /**
-     * insert record to table selective
-     * @param record the record
-     * @return insert count
-     */
-    int insertSelective(Clazz record);
-
-    /**
-     * select by primary key
-     * @param clazzId primary key
-     * @return object by primary key
-     */
-    Clazz selectByPrimaryKey(Integer clazzId);
-
-    /**
-     * update record selective
-     * @param record the updated record
-     * @return update count
-     */
-    int updateByPrimaryKeySelective(Clazz record);
-
-    /**
-     * update record
-     * @param record the updated record
-     * @return update count
-     */
-    int updateByPrimaryKey(Clazz record);
+    Clazz getClazzAllInfo(int clazzId);
 }

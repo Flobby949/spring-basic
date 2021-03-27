@@ -7,6 +7,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 /**
  * @author Flobby
  */
@@ -33,4 +35,14 @@ public class Clazz {
     */
     @ApiModelProperty(value="管理班级教师id")
     private Integer teacherId;
+
+    /**
+     * 在一方声明有一个多方list
+     */
+    private List<Student> students;
+
+    /**
+     * 班级的老师
+     */
+    private Teacher teacher;
 }

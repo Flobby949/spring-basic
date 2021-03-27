@@ -5,6 +5,8 @@ import io.swagger.annotations.ApiModelProperty;
 
 import java.time.LocalDate;
 import java.util.Date;
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -43,5 +45,12 @@ public class Student {
      * 出生日期
      */
     private LocalDate birthday;
+
+    /**
+     * 在多方声明一方对象
+     */
+    private Clazz clazz;
+
+    private List<Course> courses;
 
 }

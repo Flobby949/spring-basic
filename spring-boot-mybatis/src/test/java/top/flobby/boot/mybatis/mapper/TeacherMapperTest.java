@@ -7,9 +7,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import top.flobby.boot.mybatis.entity.Teacher;
 
 import javax.annotation.Resource;
-
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
@@ -19,9 +16,9 @@ class TeacherMapperTest {
     private TeacherMapper teacherMapper;
 
     @Test
-    void selectAll() {
-        List<Teacher> teacherList = teacherMapper.selectAll();
-        System.out.println(teacherList);
+    void getTeacherOneByOne() {
+        Teacher teacher = teacherMapper.getTeacherOneByOne(1);
+        System.out.println(teacher);
+        assertEquals("软件1911", teacher.getClazz().getClazzName());
     }
-
 }

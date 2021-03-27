@@ -7,6 +7,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 /**
  * @author Flobby
  */
@@ -27,4 +29,6 @@ public class  Course {
     */
     @ApiModelProperty(value="课程名称")
     private String courseName;
+
+    private List<Student> students;
 }

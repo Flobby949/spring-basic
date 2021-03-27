@@ -9,50 +9,10 @@ import java.util.List;
  */
 public interface TeacherMapper {
     /**
-     * delete by primary key
-     * @param teacherId primaryKey
-     * @return deleteCount
+     * 查询老师和管理的班级（一对一）
+     *
+     * @param teacherId 老师id
+     * @return teacher对象
      */
-    int deleteByPrimaryKey(Integer teacherId);
-
-    /**
-     * insert record to table
-     * @param record the record
-     * @return insert count
-     */
-    int insert(Teacher record);
-
-    /**
-     * insert record to table selective
-     * @param record the record
-     * @return insert count
-     */
-    int insertSelective(Teacher record);
-
-    /**
-     * select by primary key
-     * @param teacherId primary key
-     * @return object by primary key
-     */
-    Teacher selectByPrimaryKey(Integer teacherId);
-
-    /**
-     * update record selective
-     * @param record the updated record
-     * @return update count
-     */
-    int updateByPrimaryKeySelective(Teacher record);
-
-    /**
-     * update record
-     * @param record the updated record
-     * @return update count
-     */
-    int updateByPrimaryKey(Teacher record);
-
-    /**
-     * 获取教师列表
-     * @return List
-     */
-    List<Teacher> selectAll();
+    Teacher getTeacherOneByOne(int teacherId);
 }

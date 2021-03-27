@@ -103,4 +103,11 @@ class StudentMapperTest {
         List<Student> students = studentMapper.selectByDynamicSql(student);
         System.out.println(students);
     }
+
+    @Test
+    void getStudentManyToOne() {
+        Student student = studentMapper.getStudentManyToOne(1001);
+        System.out.println(student);
+        assertEquals("江苏苏州 ", student.getHometown());
+    }
 }

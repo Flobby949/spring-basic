@@ -73,4 +73,14 @@ public interface StudentMapper {
      * @return List<Student>
      */
     List<Student> selectByDynamicSql(Student student);
+
+    /**
+     * 根据学生id查询
+     *
+     * @param id 学生id
+     * @return  student对象
+     */
+    Student getStudentManyToOne(int id);
+
+    Student getCourse(int id);
 }
