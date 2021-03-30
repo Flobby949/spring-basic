@@ -131,4 +131,5 @@
                      left join t_course tc on tcs.course_id = tc.course_id
         where s.student_id = #{id}
     </select>
+
 </mapper>

@@ -12,23 +12,27 @@ import java.util.List;
 /**
  * @author Flobby
  */
-@ApiModel(value="top-flobby-boot-mybatis-entity-Course")
+@ApiModel(value = "top-flobby-boot-mybatis-entity-Course")
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class  Course {
+public class Course {
     /**
-    * 课程id
-    */
-    @ApiModelProperty(value="课程id")
+     * 课程id
+     */
+    @ApiModelProperty(value = "课程id")
     private Integer courseId;
 
     /**
-    * 课程名称
-    */
-    @ApiModelProperty(value="课程名称")
+     * 课程名称
+     */
+    @ApiModelProperty(value = "课程名称")
     private String courseName;
 
+    /**
+     * 学生列表
+     */
+    @ApiModelProperty(value = "学生列表")
     private List<Student> students;
 }

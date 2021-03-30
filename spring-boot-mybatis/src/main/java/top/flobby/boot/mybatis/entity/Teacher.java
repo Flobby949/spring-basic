@@ -34,5 +34,9 @@ public class Teacher {
     @ApiModelProperty(value="教师管理班级id")
     private Integer clazzId;
 
+    /**
+     * 班级对象
+     */
+    @ApiModelProperty(value = "班级对象")
     private Clazz clazz;
 }

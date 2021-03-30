@@ -82,5 +82,11 @@ public interface StudentMapper {
      */
     Student getStudentManyToOne(int id);
 
+    /**
+     * 获取课程列表
+     *
+     * @param id 学生id
+     * @return 学生对象
+     */
     Student getCourse(int id);
 }

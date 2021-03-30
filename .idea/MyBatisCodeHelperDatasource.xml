@@ -3,11 +3,11 @@
   <component name="MyBatisCodeHelperDatasource">
     <option name="projectProfile">
       <ProjectProfile>
-        <option name="javaMapperPackage" value="top.flobby.boot.mybatis.mapper" />
-        <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
-        <option name="javaModelPackage" value="top.flobby.boot.mybatis.entity" />
-        <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
-        <option name="lastDatabaseCrudChooseModuleName" value="spring-boot-mybatis" />
+        <option name="javaMapperPackage" value="top.flobby.boot.mbp.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/java" />
+        <option name="javaModelPackage" value="top.flobby.boot.mbp.domain" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="spring-boot-mbp" />
         <option name="lombokAllArgConstructor" value="true" />
         <option name="lombokBuilderAnnotation" value="true" />
         <option name="lombokDataAnnotation" value="true" />
@@ -28,6 +28,18 @@
                 </UserPackageAndPathInfoByModule>
               </value>
             </entry>
+            <entry key="spring-boot-mbp">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="top.flobby.boot.mbp.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/java" />
+                  <option name="javaModelPacakge" value="top.flobby.boot.mbp.domain" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/java" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
             <entry key="spring-boot-mybatis">
               <value>
                 <UserPackageAndPathInfoByModule>
@@ -35,6 +47,8 @@
                   <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
                   <option name="javaModelPacakge" value="top.flobby.boot.mybatis.entity" />
                   <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
                   <option name="xmlPackage" value="mapper" />
                   <option name="xmlPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/resources" />
                 </UserPackageAndPathInfoByModule>
@@ -96,11 +110,23 @@
                 </TableGenerateConfig>
               </value>
             </entry>
+            <entry key="db_spring:t_user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="User" />
+                  <option name="moduleName" value="spring-boot-mbp" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
           </map>
         </option>
         <option name="useSwagger" value="true" />
         <option name="xmlMapperPackage" value="mapper" />
-        <option name="xmlMapperPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/resources" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/resources" />
       </ProjectProfile>
     </option>
   </component>
