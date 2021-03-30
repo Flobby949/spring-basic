@@ -100,6 +100,18 @@
                 </TableGenerateConfig>
               </value>
             </entry>
+            <entry key="db_spring:t_courses">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="Courses" />
+                  <option name="moduleName" value="spring-boot-mbp" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="db_spring:t_teacher">
               <value>
                 <TableGenerateConfig>
@@ -124,7 +136,6 @@
             </entry>
           </map>
         </option>
-        <option name="useSwagger" value="true" />
         <option name="xmlMapperPackage" value="mapper" />
         <option name="xmlMapperPath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/resources" />
       </ProjectProfile>
