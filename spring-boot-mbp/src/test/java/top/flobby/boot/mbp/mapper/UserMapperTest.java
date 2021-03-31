@@ -165,4 +165,24 @@ class UserMapperTest {
         list.forEach(System.out::println);
         assertEquals(1, list.size());
     }
+
+    @Test
+    public void testCustomSQL() {
+        String name = "Jack"; //name不为空
+        String email = ""; //email为空串
+        List<User> list = userMapper.findUser(name,email);
+        list.forEach(System.out::println);
+        assertEquals(1, list.size());
+    }
+
+    @Test
+    public void testCustomSQL2() {
+        LambdaQueryWrapper<User> query = new LambdaQueryWrapper<>();
+        query.eq(User::getName, "eee");
+        // 注解实现
+        List<User> list = userMapper.selectAllByAnnotations(query);
+        // xml实现
+//        List<User> list = userMapper.selectAllByXml(query);
+        list.forEach(System.out::println);
+    }
 }
