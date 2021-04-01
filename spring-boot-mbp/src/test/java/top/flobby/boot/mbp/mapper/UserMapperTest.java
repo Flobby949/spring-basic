@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Test;
@@ -183,6 +184,21 @@ class UserMapperTest {
         List<User> list = userMapper.selectAllByAnnotations(query);
         // xml实现
 //        List<User> list = userMapper.selectAllByXml(query);
+        list.forEach(System.out::println);
+    }
+
+    @Test
+    public void testSelectByPage() {
+        LambdaQueryWrapper<User> query = new
+                LambdaQueryWrapper<>();
+        query.ge(User::getAge, 10) //查询条件：年龄⼤于10
+                .orderByDesc(User::getAge); //按照年龄的倒序排序
+        Page<User> page = new Page<>(1, 5); //查询第1⻚，每⻚5条数据
+        userMapper.selectPage(page, query); //page分⻚信息，query查询条件
+        System.out.println("总⻚数：" + page.getPages());
+        System.out.println("总记录数：" + page.getTotal());
+        // 分⻚返回的对象与传⼊的对象是同⼀个
+        List<User> list = page.getRecords();
         list.forEach(System.out::println);
     }
 }

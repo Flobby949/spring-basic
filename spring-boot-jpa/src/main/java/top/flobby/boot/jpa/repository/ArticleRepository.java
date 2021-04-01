@@ -1,6 +1,7 @@
 package top.flobby.boot.jpa.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import top.flobby.boot.jpa.entity.Article;
 
 /**
@@ -9,7 +10,7 @@ import top.flobby.boot.jpa.entity.Article;
  * @version     :1.0 
  * @description   :
  */
- 
-public interface ArticleRepository extends JpaRepository<Article, Integer> {
+
+public interface ArticleRepository extends JpaRepository<Article, Integer>, JpaSpecificationExecutor<Article> {
 
 }
