@@ -94,6 +94,7 @@ class UserMapperTest {
                 .last("limit 2");
         List<User> list = userMapper.selectList(query);
         list.forEach(System.out::println);
+        assertEquals(2, list.size());
     }
 
     @Test
@@ -105,17 +106,19 @@ class UserMapperTest {
         List<Map<String, Object>> maps =
                 userMapper.selectMaps(query);
         maps.forEach(System.out::println);
+        assertEquals(2, maps.size());
     }
 
     @Test
     void updateEq() {
         UpdateWrapper<User> update = new UpdateWrapper<>();
-        update.eq("name", "Jack").eq("age", 20); //eq是MP的条件构造器，表示"等于"关系
+        update.eq("name", "Jack").eq("age", 29); //eq是MP的条件构造器，表示"等于"关系
         User user = new User();
-        user.setAge(29);
+        user.setAge(27);
         user.setEmail("hadoopcn2@163.com");
         int rows = userMapper.update(user, update);
         System.out.println("影响记录数：" + rows);
+        assertEquals(1, rows);
     }
 
     @Test
@@ -200,5 +203,6 @@ class UserMapperTest {
         // 分⻚返回的对象与传⼊的对象是同⼀个
         List<User> list = page.getRecords();
         list.forEach(System.out::println);
+        assertEquals(5, list.size());
     }
 }
