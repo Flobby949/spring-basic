@@ -60,6 +60,18 @@
         <option name="removeTablePreName" value="t" />
         <option name="tableGenerateConfigs">
           <map>
+            <entry key="db_spring:admin">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Admin" />
+                  <option name="moduleName" value="spring-boot-mbp" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="db_spring:student">
               <value>
                 <TableGenerateConfig>

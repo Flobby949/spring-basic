@@ -13,7 +13,7 @@
     <description>mybatis plus</description>
 
     <dependencies>
-<!--        mybatis plus-->
+        <!--        mybatis plus-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
@@ -34,6 +34,18 @@
                     <groupId>org.mybatis</groupId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <!--mbp代码生成器-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+        <!--代码生成器模板-->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-engine-core</artifactId>
+            <version>2.3</version>
         </dependency>
     </dependencies>
 </project>

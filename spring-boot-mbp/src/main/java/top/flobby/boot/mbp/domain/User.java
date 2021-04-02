@@ -1,32 +1,35 @@
 package top.flobby.boot.mbp.domain;
 
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
 import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * @author Flobby
  */
-@ApiModel(value="top-flobby-boot-mbp-domain-User")
+@ApiModel(value = "top-flobby-boot-mbp-domain-User")
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @TableName("t_user")
-public class User {
-    @ApiModelProperty(value="")
+//@EqualsAndHashCode(callSuper = true)
+//@KeySequence(value = "SEQ_USER", clazz = Long.class)
+public class User extends Model<User> implements Serializable {
+//public class User {
+    private static final long serialVersionUID = 6401942840459021558L;
+    //    @TableId(type = IdType.INPUT)
     private Long id;
-
-    @ApiModelProperty(value="")
     private String name;
-
-    @ApiModelProperty(value="")
     private Integer age;
-
-    @ApiModelProperty(value="")
     private String email;
+    @TableLogic
+    private Integer deleted;
 }

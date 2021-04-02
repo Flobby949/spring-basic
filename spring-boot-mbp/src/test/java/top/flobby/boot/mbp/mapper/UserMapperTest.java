@@ -205,4 +205,42 @@ class UserMapperTest {
         list.forEach(System.out::println);
         assertEquals(5, list.size());
     }
+
+    // Active Record模式
+    @Test
+    public void testInsert() {
+        User user = new User();
+        user.setName("springboot");
+        user.setAge(18);
+        user.setEmail("springboot@163.com");
+        boolean success = user.insert();
+        assertEquals(true, success);
+    }
+
+    @Test
+    public void testSelect() {
+        User user = new User();
+        List<User> users = user.selectAll();
+        users.forEach(System.out::println);
+        assertEquals(10,users.size());
+    }
+
+    @Test
+    public void testUpdate() {
+        User user = User.builder()
+                .id(1283915378849751041L)
+                .name("mbp")
+                .age(30)
+                .build();
+        boolean success = user.insertOrUpdate();
+        assertEquals(true, success);
+    }
+
+    @Test
+    public void testDelete() {
+        User user = new User();
+        user.setId(1283915378849751041L);
+        boolean success = user.deleteById();
+        assertEquals(true, success);
+    }
 }
