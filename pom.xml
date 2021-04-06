@@ -33,6 +33,7 @@
         <module>spring-boot-mbp</module>
         <module>spring-boot-aop</module>
         <module>tools</module>
+        <module>spring-boot-servlet</module>
     </modules>
 
     <dependencies>
