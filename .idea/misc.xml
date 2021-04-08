@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/tools/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-mbp/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-exception/pom.xml" />
       </list>
     </option>
   </component>

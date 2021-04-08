@@ -10,6 +10,7 @@
         <module name="spring-boot-config" />
         <module name="spring-boot-jpa" />
         <module name="spring-boot-mbp" />
+        <module name="spring-boot-exception" />
         <module name="spring-boot-servlet" />
         <module name="spring-boot-aop" />
         <module name="spring-boot-web" />
@@ -24,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-boot-aop" options="-parameters" />
       <module name="spring-boot-config" options="-parameters" />
+      <module name="spring-boot-exception" options="-parameters" />
       <module name="spring-boot-jdbc" options="-parameters" />
       <module name="spring-boot-jpa" options="-parameters" />
       <module name="spring-boot-mbp" options="-parameters" />

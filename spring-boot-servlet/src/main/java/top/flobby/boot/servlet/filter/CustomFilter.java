@@ -11,7 +11,7 @@ import java.io.IOException;
  * @date :2021/4/6
  * @description :
  */
-//@WebFilter(urlPatterns = "/*")
+//@WebFilter(filterName = "customFilter", urlPatterns = "/*")
 @Slf4j
 public class CustomFilter implements Filter {
     @Override
@@ -20,7 +20,8 @@ public class CustomFilter implements Filter {
     }
 
     @Override
-    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse,
+                         FilterChain filterChain) throws IOException, ServletException {
         log.info("过滤器被执行");
         filterChain.doFilter(servletRequest, servletResponse);
     }

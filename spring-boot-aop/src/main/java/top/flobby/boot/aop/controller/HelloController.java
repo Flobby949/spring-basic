@@ -29,7 +29,6 @@ public class HelloController {
         log.info(name);
         log.info(title);
         Thread.sleep(3000);
-//        int a = 3 / 0;
         return "Hello World";
     }
 

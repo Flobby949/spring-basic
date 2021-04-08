@@ -31,7 +31,6 @@ public class CustomListener implements ServletContextListener,
     @Override
     public void sessionCreated(HttpSessionEvent se) {
         log.info("###########session被创建");
-
     }
 
     @Override
