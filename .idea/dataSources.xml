@@ -11,5 +11,12 @@
         <property name="serverTimezone" value="GMT+8" />
       </driver-properties>
     </data-source>
+    <data-source source="LOCAL" name="bilibili@www.jinhuiqian.top" uuid="e54994e9-dbcf-4893-8f71-a2fccd7bde87">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://www.jinhuiqian.top:3306/bilibili</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

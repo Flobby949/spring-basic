@@ -3,11 +3,11 @@
   <component name="MyBatisCodeHelperDatasource">
     <option name="projectProfile">
       <ProjectProfile>
-        <option name="javaMapperPackage" value="top.flobby.boot.mbp.mapper" />
-        <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/java" />
-        <option name="javaModelPackage" value="top.flobby.boot.mbp.domain" />
-        <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/java" />
-        <option name="lastDatabaseCrudChooseModuleName" value="spring-boot-mbp" />
+        <option name="javaMapperPackage" value="top.flobby.tools.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/tools/src/main/java" />
+        <option name="javaModelPackage" value="top.flobby.tools.entity" />
+        <option name="javaModelPath" value="E:\idea.projects\spring-boot-learning\tools\src\main\java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="tools" />
         <option name="lombokAllArgConstructor" value="true" />
         <option name="lombokBuilderAnnotation" value="true" />
         <option name="lombokDataAnnotation" value="true" />
@@ -35,6 +35,8 @@
                   <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/java" />
                   <option name="javaModelPacakge" value="top.flobby.boot.mbp.domain" />
                   <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/java" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/java" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/java" />
                   <option name="xmlPackage" value="mapper" />
                   <option name="xmlPath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/resources" />
                 </UserPackageAndPathInfoByModule>
@@ -54,12 +56,38 @@
                 </UserPackageAndPathInfoByModule>
               </value>
             </entry>
+            <entry key="tools">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="top.flobby.tools.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/tools/src/main/java" />
+                  <option name="javaModelPacakge" value="top.flobby.tools.entity" />
+                  <option name="javaModelPath" value="E:\idea.projects\spring-boot-learning\tools\src\main\java" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/tools/src/main/java" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/tools/src/main/java" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/tools/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
           </map>
         </option>
         <option name="p3CComment" value="true" />
         <option name="removeTablePreName" value="t" />
         <option name="tableGenerateConfigs">
           <map>
+            <entry key="bilibili:t_hot">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="Video" />
+                  <option name="moduleName" value="tools" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="db_spring:admin">
               <value>
                 <TableGenerateConfig>
@@ -149,7 +177,7 @@
           </map>
         </option>
         <option name="xmlMapperPackage" value="mapper" />
-        <option name="xmlMapperPath" value="$PROJECT_DIR$/spring-boot-mbp/src/main/resources" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/tools/src/main/resources" />
       </ProjectProfile>
     </option>
   </component>

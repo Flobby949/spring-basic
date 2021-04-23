@@ -243,4 +243,11 @@ class UserMapperTest {
         boolean success = user.deleteById();
         assertEquals(true, success);
     }
+
+    @Test
+    public void testInsertAutoFill() {
+        User user = User.builder().name("软件学⼦").age(19).email("soft@niit.edu.cn").build();
+        int row = userMapper.insert(user);
+        assertEquals(1, row);
+    }
 }

@@ -59,7 +59,7 @@ class StudentMapperTest {
         List<Student> students = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             Student student = Student.builder()
-                    .studentId(3000 + i)
+                    .studentId(5000 + i)
                     .clazzId(1)
                     .studentName("测试学生" + i)
                     .hometown("测试城市")

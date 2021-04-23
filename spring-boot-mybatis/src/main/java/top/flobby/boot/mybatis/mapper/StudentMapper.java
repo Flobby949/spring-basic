@@ -9,6 +9,8 @@ import java.util.List;
  * @author Flobby
  */
 public interface StudentMapper {
+    List<Student> getALl();
+
     /**
      * 新增学生
      *

@@ -34,6 +34,7 @@
         <module>spring-boot-aop</module>
         <module>tools</module>
         <module>spring-boot-servlet</module>
+        <module>spring-boot-param-check</module>
     </modules>
 
     <dependencies>

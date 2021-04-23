@@ -132,4 +132,7 @@
         where s.student_id = #{id}
     </select>
 
+    <select id="getALl" resultType="top.flobby.boot.mybatis.entity.Student">
+        select * from t_student
+    </select>
 </mapper>

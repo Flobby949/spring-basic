@@ -10,6 +10,7 @@ import top.flobby.boot.mybatis.entity.Student;
 import top.flobby.boot.mybatis.mapper.StudentMapper;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author :Flobby
@@ -28,5 +29,11 @@ public class StudentController {
     public AjaxResponse getCourse(@PathVariable int studentId) {
         Student student = studentMapper.getCourse(studentId);
         return AjaxResponse.success(student);
+    }
+
+    @GetMapping("all")
+    public AjaxResponse getALl(){
+        List<Student> students = studentMapper.getALl();
+        return AjaxResponse.success(students);
     }
 }

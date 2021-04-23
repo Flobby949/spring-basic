@@ -8,16 +8,13 @@ import org.hibernate.validator.constraints.Length;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 import top.flobby.boot.quickstart.controller.dto.AjaxResponse;
 import top.flobby.boot.quickstart.entity.Article;
 import top.flobby.boot.quickstart.entity.ArticleReader;
 
-import javax.servlet.http.HttpServletRequest;
-import java.io.File;
-import java.io.IOException;
-import java.time.LocalDateTime;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
 
 /**
  * @author :Flobby
@@ -76,7 +73,7 @@ public class ArticleController {
                 .id(id)
                 .author("jcx")
                 .title("《spring》")
-                .content("spring学不下去")
+                .content("spring")
                 .updateTime(new Date())
                 .build();
         return AjaxResponse.success(article);

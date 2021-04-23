@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/spring-boot-mbp/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-aop/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-exception/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-param-check/pom.xml" />
       </list>
     </option>
   </component>
