@@ -13,3 +13,9 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   mapper-locations: classpath*:/mapper/*Mapper.xml
   type-aliases-package: top.flobby.tools.entity
+
+
+minio:
+  endpoint: http://106.14.246.27:9050
+  accessKey: FLOBBY
+  secretKey: FlobbYKobeBryAnt
